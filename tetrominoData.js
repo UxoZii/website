@@ -1,7 +1,15 @@
 function setData() {
+  offsetX = 50;
+  offsetY = 0;
+  
   descentTimer = 0;
+  alreadyHeld = false;
   lockTimer = 0;
   board = [];
+  heldPiece = -1;
+  DASTimerR = 0;
+  DASTimerL = 0;
+  lastKeyPressed = 0;
   for (i = 0; i < 40; i++) {
     board[i] = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
   };
